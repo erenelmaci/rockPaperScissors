@@ -26,7 +26,7 @@ select.addEventListener("click", (e) => {
 const pcArr = ["tas", "kagit", "makas"]; //pc nin seçenekleri
 
 function pc() {
-  pcRandom = "tas";
+  pcRandom = Math.floor(Math.random()*3)
 
   pcChoice.innerHTML = `<img src="./assets/${pcRandom}.png"></img>`;
   result();
